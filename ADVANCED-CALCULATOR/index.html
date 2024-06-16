@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advance Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main>
+        <div class="container">
+            <div id="display">
+
+            </div>
+            <div class="buttons">
+                <div class="button" onclick="clearDisplay()">Clear</div>
+                <div class="button" onclick="addChar('(')">(</div>
+                <div class="button" onclick="addChar(')')">)</div>
+                <div class="button" onclick="deleteChar()">Backspace</div>
+
+                <div class="button" onclick="changeSign()">+/-</div>
+                <div class="button" onclick="addChar('7')">7</div>
+                <div class="button" onclick="addChar('8')">8</div>
+                <div class="button" onclick="addChar('9')">9</div>
+
+                <div class="button" onclick="addChar('/')">/</div>
+                <div class="button" onclick="addChar('4')">4</div>
+                <div class="button" onclick="addChar('5')">5</div>
+                <div class="button" onclick="addChar('6')">6</div>
+
+                <div class="button" onclick="addChar('*')">*</div>
+                <div class="button" onclick="addChar('1')">1</div>
+                <div class="button" onclick="addChar('2')">2</div>
+                <div class="button" onclick="addChar('3')">3</div>
+
+                <div class="button" onclick="addChar('+')">+</div>
+                <div class="button" onclick="addChar('0')">0</div>
+                <div class="button" onclick="addChar('.')">.</div>
+                <div class="button" id="equal" onclick="if(checkNum()) {compute()}">Enter</div>
+
+                <div class="button" onclick="addChar('-')">-</div>
+                <div class="button" onclick="if(checkNum()) {sqrt()}">sqrt</div>
+                <div class="button" onclick="if(checkNum()) {sqare()}">sq</div>
+                <div class="button" onclick="if(checkNum()) {exp()}">exp</div>
+
+                <div class="button" onclick="if(checkNum()) {ln()}">ln</div>
+                <div class="button" onclick="if(checkNum()) {cos()}">cos</div>
+                <div class="button" onclick="if(checkNum()) {sin()}">sin</div>
+                <div class="button" onclick="if(checkNum()) {tan()}">tan</div>
+            </div>
+        </div>
+    </main>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
